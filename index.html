@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Paras Sharma | Cyber Security & AI/ML Expert Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#050b14',
+                            card: '#0b1326',
+                            border: '#1e293b',
+                            cyan: '#00f0ff',
+                            emerald: '#00ff66',
+                            purple: '#bd00ff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+        }
+        .glow-emerald {
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-slate-100 font-sans cyber-grid selection:bg-cyber-cyan selection:text-black">
+
+    <!-- Top Security / Status Bar -->
+    <div class="bg-black/60 border-b border-cyber-border text-xs py-2 px-6 text-slate-400 flex justify-between items-center backdrop-blur">
+        <div class="flex items-center space-x-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-cyber-emerald animate-ping"></span>
+            <span class="font-mono text-cyber-emerald tracking-wider">[SYS_SEC_ACTIVE]</span>
+            <span class="hidden md:inline text-slate-500">| Status: Node Operational & Verified</span>
+        </div>
+        <div class="flex items-center space-x-4 font-mono">
+            <a href="mailto:parassharma.a19@gmail.com" class="hover:text-cyber-cyan transition">parassharma.a19@gmail.com</a>
+            <span>|</span>
+            <span>New Delhi, IN</span>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="font-mono text-xl font-black tracking-wider text-cyber-cyan flex items-center space-x-2">
+                <span>&gt;</span>
+                <span class="text-white">PARAS_SHARMA</span>
+                <span class="animate-pulse text-cyber-emerald">_</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-mono text-slate-300">
+                <a href="#about" class="hover:text-cyber-cyan transition">01. ABOUT</a>
+                <a href="#expertise" class="hover:text-cyber-cyan transition">02. EXPERTISE</a>
+                <a href="#experience" class="hover:text-cyber-cyan transition">03. EXPERIENCE</a>
+                <a href="#projects" class="hover:text-cyber-cyan transition">04. PROJECTS</a>
+                <a href="#publications" class="hover:text-cyber-cyan transition">05. RESEARCH</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="https://www.linkedin.com/in/paras-sharma-691897180" target="_blank" class="hidden sm:inline-flex items-center space-x-2 bg-cyber-card border border-cyber-border hover:border-cyber-cyan px-4 py-2 rounded-lg text-xs font-mono transition">
+                    <svg class="w-4 h-4 text-cyber-cyan" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
+        <div class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyber-cyan/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-cyber-emerald/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-3xl relative z-10">
+            <div class="font-mono text-xs md:text-sm text-cyber-cyan mb-4 tracking-widest uppercase bg-cyber-cyan/10 border border-cyber-cyan/30 px-3.5 py-1.5 rounded inline-block">
+                // PH.D. FORENSIC SCIENCE | CYBER SECURITY & AI EXPERT
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-none">
+                Dr. Paras Sharma
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-mono mb-8 leading-relaxed">
+                Driving advanced <span class="text-cyber-cyan">Digital Forensics & Incident Response (DFIR)</span>, vulnerability R&D, and intelligent <span class="text-cyber-emerald">AI/ML solutions</span> with 9+ years of operational & academic excellence.
+            </p>
+            <div class="flex flex-wrap gap-4 font-mono">
+                <a href="#projects" class="bg-cyber-cyan hover:bg-cyan-400 text-black font-bold px-7 py-3.5 rounded transition shadow-lg glow-cyan flex items-center space-x-2">
+                    <span>&gt; EXPLORE_PROJECTS</span>
+                </a>
+                <a href="#contact" class="bg-cyber-card hover:bg-slate-900 border border-cyber-border hover:border-cyber-emerald text-slate-200 px-7 py-3.5 rounded transition flex items-center space-x-2">
+                    <span>INITIATE_CONTACT</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Metric Badges Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-12 border-t border-cyber-border font-mono">
+            <div class="bg-cyber-card/80 border border-cyber-border p-4 rounded-xl">
+                <div class="text-2xl md:text-3xl font-black text-cyber-cyan">9+ YRS</div>
+                <div class="text-xs text-slate-400 mt-1">Cyber & Forensics Exp</div>
+            </div>
+            <div class="bg-cyber-card/80 border border-cyber-border p-4 rounded-xl">
+                <div class="text-2xl md:text-3xl font-black text-cyber-emerald">500+</div>
+                <div class="text-xs text-slate-400 mt-1">Digital Evidences Examined</div>
+            </div>
+            <div class="bg-cyber-card/80 border border-cyber-border p-4 rounded-xl">
+                <div class="text-2xl md:text-3xl font-black text-cyber-cyan">550+</div>
+                <div class="text-xs text-slate-400 mt-1">Arson & Crime Scene Cases</div>
+            </div>
+            <div class="bg-cyber-card/80 border border-cyber-border p-4 rounded-xl">
+                <div class="text-2xl md:text-3xl font-black text-cyber-emerald">Ph.D.</div>
+                <div class="text-xs text-slate-400 mt-1">Forensic Science & AI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div>
+                <span class="font-mono text-cyber-cyan text-xs">// 01. PROFILE_SUMMARY</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white mt-2 mb-4">Tactical & Academic Background</h2>
+                <p class="text-slate-400 text-sm">Bridging high-level academic research with operational cyber defense, digital triage, and specialized training.</p>
+            </div>
+            <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed bg-cyber-card/40 border border-cyber-border p-8 rounded-2xl">
+                <p>
+                    I hold a Ph.D. in Forensic Science with a specialized focus on <strong class="text-cyber-cyan">Cyber & Digital Forensics and Artificial Intelligence applications</strong>. Currently serving as Assistant Manager - Technical at 3rd Eye Techno Solution Pvt. Ltd., I handle intricate digital evidence examinations, damaged media R&D, and tactical instruction for law enforcement and industry professionals.
+                </p>
+                <p>
+                    My professional journey spans senior roles including Cyber Forensic Consultant for the State Crime Branch, Assistant Professor of AI/ML and Cyber Forensics at Jain University, and Scientific Officer examining hundreds of digital and physical crime scene files with recognized court testimony expertise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Technical Stack Section -->
+    <section id="expertise" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border">
+        <div class="mb-12">
+            <span class="font-mono text-cyber-cyan text-xs">// 02. TECHNICAL_STACK</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Core Competencies & Toolsets</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Pillar 1: Digital Forensics -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl hover:border-cyber-cyan transition group">
+                <div class="font-mono text-xs text-cyber-cyan mb-2">MODULE_01</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Digital Forensics & IR (DFIR)</h3>
+                <p class="text-slate-400 text-sm mb-6">
+                    Mobile, network, cloud, and email forensics, image/video processing, audio analysis, and damaged media recovery.
+                </p>
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Cellebrite UFED</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Magnet AXIOM</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Oxygen Forensics</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">EnCase / FTK</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Autopsy</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">AMPED5</span>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Cybersecurity -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl hover:border-cyber-emerald transition group">
+                <div class="font-mono text-xs text-cyber-emerald mb-2">MODULE_02</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Cybersecurity & Threat Analysis</h3>
+                <p class="text-slate-400 text-sm mb-6">
+                    Vulnerability assessment, penetration testing, malware analysis, network monitoring, and risk management.
+                </p>
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Splunk / QRadar</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">BurpSuite</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Wireshark</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">VirusTotal</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Kali Linux</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Nessus & Nmap</span>
+                </div>
+            </div>
+
+            <!-- Pillar 3: AI / ML & Programming -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl hover:border-cyber-cyan transition group">
+                <div class="font-mono text-xs text-cyber-cyan mb-2">MODULE_03</div>
+                <h3 class="text-xl font-bold mb-3 text-white">AI, Machine Learning & Stack</h3>
+                <p class="text-slate-400 text-sm mb-6">
+                    Predictive modeling, NLP pipelines, deep learning computer vision frameworks, and software engineering.
+                </p>
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Python / R / SQL</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">TensorFlow / PyTorch</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Scikit-learn</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Django & Spacy</span>
+                    <span class="bg-black/50 border border-cyber-border text-slate-300 px-2.5 py-1 rounded">Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border">
+        <div class="mb-12">
+            <span class="font-mono text-cyber-cyan text-xs">// 03. CAREER_TIMELINE</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Professional Experience</h2>
+        </div>
+
+        <div class="space-y-6 border-l-2 border-cyber-border ml-3 pl-6 md:pl-10">
+            <!-- Job 1 -->
+            <div class="relative bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <div class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-cyber-cyan border-4 border-cyber-bg"></div>
+                <span class="font-mono text-xs text-cyber-cyan">06/2025 - PRESENT</span>
+                <h3 class="text-xl font-bold text-white mt-1">Assistant Manager - Technical</h3>
+                <p class="text-sm text-slate-400 font-mono mb-3">3rd Eye Techno Solution Pvt. Ltd, Delhi</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Executing deep cyber and digital forensics, analyzing multimedia evidence using Magnet Automate, Atola, UFED, XRY, AXIOM, Oxygen, and FTK. Conducting R&D on damaged media challenges and training police and industry personnel.
+                </p>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="relative bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <div class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-slate-600 border-4 border-cyber-bg"></div>
+                <span class="font-mono text-xs text-cyber-cyan">05/2024 - 05/2025</span>
+                <h3 class="text-xl font-bold text-white mt-1">Cyber Forensic Consultant</h3>
+                <p class="text-sm text-slate-400 font-mono mb-3">Cyber FSL, State Crime Branch, Panchkula, Haryana</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Spearheaded mobile, network, and video forensics for State Crime Branch investigations. Supervised training programs and internship modules on forensic techniques.
+                </p>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="relative bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <div class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-slate-600 border-4 border-cyber-bg"></div>
+                <span class="font-mono text-xs text-cyber-cyan">07/2021 - 04/2024</span>
+                <h3 class="text-xl font-bold text-white mt-1">Assistant Professor (AI/ML, Cyber Security & Forensics)</h3>
+                <p class="text-sm text-slate-400 font-mono mb-3">Jain (Deemed-to-be) University, Bangalore</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Delivered advanced curriculum in Machine Learning, Deep Learning, and Digital Forensics. Formulated NEP-compliant M.Sc. syllabi and managed advanced Digital Forensic labs.
+                </p>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="relative bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <div class="absolute -left-[31px] md:-left-[47px] top-6 w-4 h-4 rounded-full bg-slate-600 border-4 border-cyber-bg"></div>
+                <span class="font-mono text-xs text-cyber-cyan">01/2017 - 01/2021</span>
+                <h3 class="text-xl font-bold text-white mt-1">Scientific Officer</h3>
+                <p class="text-sm text-slate-400 font-mono mb-3">Premier Forensic Science Institute, Delhi</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Examined 500+ digital forensic evidence files and 550+ arson crime scenes. Delivered expert court testimonies and formal legal report evaluations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border">
+        <div class="mb-12">
+            <span class="font-mono text-cyber-cyan text-xs">// 04. APPLIED_PROJECTS</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Systems & Models Developed</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-cyan mb-2">NLP_SYSTEM</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Banking Query Chatbot</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Intelligent conversational model leveraging machine learning classification and NLP to accurately categorize and resolve user queries.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>Python • NLP • ML</span>
+                    <span class="text-cyber-cyan">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-emerald mb-2">COMPUTER_VISION</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Facial Recognition & Somatometry</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Advanced biometric framework for intergenerational craniofacial heritability research and dual-model gender classification via facial biometrics.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>Biometrics • PyTorch</span>
+                    <span class="text-cyber-emerald">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-cyan mb-2">DEEP_LEARNING</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Automatic Image Colorization</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Deep learning image processing model utilizing PyTorch, TensorFlow, and computer vision techniques to restore and colorize monochrome evidence.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>TensorFlow • PyTorch</span>
+                    <span class="text-cyber-cyan">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-emerald mb-2">TRANSFORMER_MODEL</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Text Q&A Analysis (BERT)</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Implemented bidirectional transformer architectures using TensorFlow and PyTorch to power deep contextual understanding for question-answering systems.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>BERT • Transformers</span>
+                    <span class="text-cyber-emerald">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-cyan mb-2">PREDICTIVE_MODEL</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Forest Fire Prediction Engine</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        High-accuracy environmental risk prediction model utilizing XGBoost algorithms on structured sensor telemetry data.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>XGBoost • Analytics</span>
+                    <span class="text-cyber-cyan">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="bg-cyber-card border border-cyber-border p-6 rounded-2xl flex flex-col justify-between hover:border-cyber-cyan transition">
+                <div>
+                    <div class="font-mono text-xs text-cyber-emerald mb-2">MALWARE_ANALYSIS</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Malware Forensic Analysis Suite</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Automated script and signature assessment tools built using Python to analyze binary characteristics and behavior patterns during threat triage.
+                    </p>
+                </div>
+                <div class="font-mono text-xs text-slate-500 pt-4 border-t border-cyber-border flex justify-between items-center">
+                    <span>Python • Threat Triage</span>
+                    <span class="text-cyber-emerald">&rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border">
+        <div class="mb-12">
+            <span class="font-mono text-cyber-cyan text-xs">// 05. RESEARCH_&_PUBLICATIONS</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white mt-2">Academic Contributions</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <h4 class="text-white font-semibold mb-1">Dual-Model Machine Learning Framework for Gender Classification: Advancing Cyber and Digital Forensic Applications through Facial Biometrics</h4>
+                <p class="text-xs font-mono text-slate-400">Computational Forensics & Facial Biometrics Integration</p>
+            </div>
+            <div class="bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <h4 class="text-white font-semibold mb-1">Computational Forensics and Machine Learning: Leveraging AI and Machine Learning for Intergenerational Analysis of Craniofacial Heritability of Indian Families Using Photographs</h4>
+                <p class="text-xs font-mono text-slate-400">Statistical Modeling & Morphometric Resemblance Analysis</p>
+            </div>
+            <div class="bg-cyber-card/60 border border-cyber-border p-6 rounded-xl">
+                <h4 class="text-white font-semibold mb-1">Unveiling the Intricacies of Craniofacial Measurement: A Comparative Analysis of Direct and AI/ML-Based Techniques in Cyber and Digital Forensics</h4>
+                <p class="text-xs font-mono text-slate-400">Comparative Forensic Benchmarks & AI Estimation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-24 border-t border-cyber-border text-center">
+        <div class="max-w-2xl mx-auto bg-cyber-card border border-cyber-border p-10 rounded-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-cyber-cyan/5 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <span class="font-mono text-xs text-cyber-cyan">// SECURE_CHANNEL</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white mt-2 mb-4">Establish Connection</h2>
+            <p class="text-slate-300 text-sm mb-8 leading-relaxed">
+                Available for digital forensics consultations, AI research collaborations, cybersecurity advisory, and professional inquiries.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 font-mono text-sm">
+                <a href="mailto:parassharma.a19@gmail.com" class="bg-cyber-cyan hover:bg-cyan-400 text-black font-bold px-8 py-3.5 rounded transition shadow-lg glow-cyan">
+                    [ SEND_EMAIL ]
+                </a>
+                <a href="https://www.linkedin.com/in/paras-sharma-691897180" target="_blank" class="bg-black border border-cyber-border hover:border-cyber-emerald text-slate-200 px-8 py-3.5 rounded transition">
+                    [ VIEW_LINKEDIN ]
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-cyber-border text-center font-mono text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center">
+        <p>&copy; 2026 Dr. Paras Sharma. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 text-cyber-emerald">HOSTED_VIA_GITHUB_PAGES</p>
+    </footer>
+
+</body>
+</html>
